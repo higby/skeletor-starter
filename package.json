@@ -1,0 +1,26 @@
+{
+  "name": "skeletor-starter",
+  "version": "1.0.0",
+  "description": "Skeletor's opinionated 11ty starter",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve --quiet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/higby/skeletor-starter.git"
+  },
+  "author": {
+    "name": "Branden Higby",
+    "email": "branden@higby.io",
+    "url": "https://higby.io/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.0",
+    "dayjs": "^1.11.7",
+    "sass": "^1.62.1"
+  }
+}

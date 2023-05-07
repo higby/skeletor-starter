@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>    
+  <meta name="description" content="{{ description | default: site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if noindex %}<meta name='robots' content='noindex'>{% endif %}
+
+  <meta name="author" content="{{ site.author.name }}">
+  <meta name="generator" content="{{ eleventy.generator }}">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+
+  <style>{{ styles }}</style>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>{{ content }}</body>
+
+</html>

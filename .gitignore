@@ -1,0 +1,9 @@
+# Eleventy Ouput
+build/
+.cache/
+
+# Node
+node_modules/
+
+# Environment File
+.env
