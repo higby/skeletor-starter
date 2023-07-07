@@ -1,153 +1,44 @@
-// ------------ Universal ------------
-
-*, *::before, *::after {}
-
-// ------------ Root ------------
-
-:root {}
-html {}
-body {}
-
-// ------------ Content Sectioning ------------
-
-h1, h2, h3, h4, h5, h6 {}
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
-
-header {}
-
-nav {
-  ul, ol {}
-  li {}
-  a {}
+:root {
+  color-scheme: dark;
 }
 
-main {}
-
-article {}
-
-section {}
-
-aside {}
-
-search {}
-
-footer {}
-
-address {}
-
-
-// ------------ Text Content ------------
-
-p, ol, ul, pre, blockquote, figure, hr, dl {}
-
-p {}
-
-ol, ul {
-  ol, ul {}
-}
-ol {}
-ul {}
-li {
-  li {}
+body {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
 }
 
-pre {
-  code {}
-  samp {}
+footer {
+  border-top: 1px solid white;
+  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
-blockquote {}
+main > * { 
+  margin: 1em 0;
+}
 
-figure {}
-figcaption {}
+a {
+  color: #8c8cff;
+  &:hover {
+    text-decoration: none;
+  }
+}
 
-hr {}
+code {
+  padding: 0.2rem 0.4rem;
+  border: 1px solid white;
+  border-radius: .25rem;
+  white-space: nowrap;
+}
 
-dl {}
-dt {}
-dd {}
-
-// ------------ Inline Text ------------
-
-a {}
-a:visited {}
-a:hover {}
-a:active {}
-
-strong {}
-b {}
-
-em {}
-i {}
-
-q {}
-cite {}
-
-s {}
-
-mark {}
-
-small {}
-sub {}
-sup {}
-
-code {}
-
-dfn {}
-abbr {}
-abbr[title] {}
-
-var {}
-kbd {}
-kbd kbd {}
-samp {}
-
-u {}
-
-data {}
-time {}
-
-del {}
-ins {}
-
-
-// ------------ Embedded Content ------------
-
-
-img {}
-svg {}
-video {}
-canvas {}
-audio {}
-object {}
-
-noscript {}
-
-
-// ------------ Table Content ------------
-
-
-table {}
-caption {}
-col:first-child {}
-thead {}
-tbody {}
-tfoot {}
-tr {}
-th {}
-td {}
-
-// ------------ Interactive Elements ------------
-
-details {}
-details[open] {}
-summary {}
-details[open] summary {}
+img {
+  width: 30%;
+  float: inline-end;
+  margin-inline-start: 1rem;
+  margin-bottom: 1rem;
+}
 
 
 /*

@@ -1,0 +1,11 @@
+---
+layout: 'base.liquid'
+---
+{% include 'header' %}
+<main>
+  <header>
+    <h1>{{ heading | default: title }}</h1>
+  </header>
+  {{ content }}
+</main>
+{% include 'footer' %}
