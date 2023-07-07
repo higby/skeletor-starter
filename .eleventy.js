@@ -10,7 +10,7 @@ module.exports = config => {
     htmlTemplateEngine: 'liquid',
     markdownTemplateEngine: 'liquid',
     dir: {
-      input: 'src/input',
+      input: 'src/pages',
       includes: '../includes',
       layouts: '../layouts',
       data: '../data',
