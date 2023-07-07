@@ -7,6 +7,10 @@ body {
   margin: 0 auto;
   padding: 2rem 0;
   font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+  @media (max-width: calc(650px + 4rem)) {
+    max-width: none;
+    margin: 0 2rem;
+  }
 }
 
 footer {
@@ -38,6 +42,9 @@ img {
   float: inline-end;
   margin-inline-start: 1rem;
   margin-bottom: 1rem;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 }
 
 
