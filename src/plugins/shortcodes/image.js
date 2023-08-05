@@ -6,7 +6,7 @@ module.exports = config => {
 
     if (!src.startsWith('http')) src = `./src/assets/images${src}`
 
-    let metadata = await Image(src, {
+    const metadata = await Image(src, {
       formats: ['avif', 'webp', 'jpeg'],
       urlPath: '/images',
       outputDir: './build/images/'

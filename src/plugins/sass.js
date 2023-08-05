@@ -1,7 +1,7 @@
 const fs = require('fs')
 const sass = require('sass')
 
-let stylesDirectory = `src/assets/styles/`
+const stylesDirectory = `src/assets/styles/`
 
 module.exports = config => {
   config.addGlobalData('styles', async () => {
