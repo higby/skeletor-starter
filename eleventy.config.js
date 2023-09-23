@@ -2,7 +2,7 @@ module.exports = config => {
   config.setDataFileSuffixes(['.data', ''])
 
   config.addWatchTarget(`src/assets/`)
-  config.addPassthroughCopy({ [`src/assets/public/`]: '/' })
+  config.addPassthroughCopy({ [`src/assets/static/`]: '/' })
 
   config.addPlugin(require(`./src/plugins`))
 
