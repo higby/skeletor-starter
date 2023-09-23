@@ -1,3 +1,3 @@
 module.exports = {
-  layout: 'base.liquid'
+  layout: 'html.liquid'
 }

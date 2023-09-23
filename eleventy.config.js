@@ -11,8 +11,8 @@ module.exports = config => {
     markdownTemplateEngine: 'liquid',
     dir: {
       input: 'src/pages',
-      includes: '../includes',
-      layouts: '../layouts',
+      includes: '../templates/includes',
+      layouts: '../templates/layouts',
       data: '../data',
       output: 'build'
     }
