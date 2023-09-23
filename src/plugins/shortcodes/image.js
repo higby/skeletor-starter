@@ -2,11 +2,11 @@ const Image = require('@11ty/eleventy-img')
 
 module.exports = config => {
   config.addShortcode('image', async (src, alt, className) => {
-    if (alt === undefined) throw new Error(`Missing \`alt\` on image from: ${src}`)
+    if (!alt) throw new Error(`Missing \`alt\` on image from: ${src}`)
 
-    if (!src.startsWith('http')) src = `./src/assets/images${src}`
+    if (!src.startsWith('http')) src = `./src/assets/images${src.startsWith('/') ? src : `/${src}`}`
 
-    const metadata = await Image(src, {
+    let metadata = await Image(src, {
       formats: ['avif', 'webp', 'jpeg'],
       urlPath: '/images',
       outputDir: './build/images/'
