@@ -2,7 +2,7 @@ module.exports = config => {
   config.setDataFileSuffixes(['.data', ''])
 
   config.addWatchTarget(`src/assets/`)
-  config.addPassthroughCopy({ [`src/assets/public/`]: '/' })
+  config.addPassthroughCopy({ [`src/assets/static/`]: '/' })
 
   config.addPlugin(require(`./src/plugins`))
 
@@ -11,8 +11,8 @@ module.exports = config => {
     markdownTemplateEngine: 'liquid',
     dir: {
       input: 'src/pages',
-      includes: '../includes',
-      layouts: '../layouts',
+      includes: '../templates/includes',
+      layouts: '../templates/layouts',
       data: '../data',
       output: 'build'
     }
