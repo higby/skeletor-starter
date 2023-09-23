@@ -4,5 +4,6 @@ module.exports = config => {
 
   config.addPlugin(require(`./shortcodes/image`))
 
+  config.addPlugin(require('./markdown'))
   config.addPlugin(require('./sass'))
 }
