@@ -16,7 +16,7 @@ Opinionated Eleventy Starter
 
 ## Config
 
-- [Data file file suffix](https://www.11ty.dev/docs/config/#change-file-suffix-for-data-files) changed to `.data`
+- [Data file suffix](https://www.11ty.dev/docs/config/#change-file-suffix-for-data-files) changed to `.data`
 - Directory `src/assets/` added to [watch targets](https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets)
 - Contents of directory `src/assets/static/` gets [passed](https://www.11ty.dev/docs/copy/) to the root during build
 - Both the HTML & Markdown [template engines](https://www.11ty.dev/docs/languages/#overriding-the-template-language) are set to `liquid`
@@ -126,7 +126,7 @@ This allows us to add the styles to the page as needed.
 
 The idea to make an 11ty starter was inspired by:
 
-- The offical [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog)
+- The official [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog)
 - [Stephanie Eckles](https://thinkdobecreate.com/)' [11ty Sass Skeleton](https://github.com/5t3ph/11ty-sass-skeleton/)
 - [Lene Saile](https://www.lenesaile.com/)'s [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent)
 
