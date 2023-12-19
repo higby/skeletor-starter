@@ -1,3 +1,4 @@
-module.exports = {
-  layout: 'page.liquid'
+export default {
+  layout: 'page.liquid',
+  styles: ['main']
 }

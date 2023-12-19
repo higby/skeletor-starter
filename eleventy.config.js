@@ -1,10 +1,12 @@
-module.exports = config => {
-  config.setDataFileSuffixes(['.data', ''])
+import plugins from './src/plugins/index.js'
 
-  config.addWatchTarget(`src/assets/`)
-  config.addPassthroughCopy({ [`src/assets/static/`]: '/' })
+export default eleventyConfig => {
+  eleventyConfig.setDataFileSuffixes(['.data', ''])
 
-  config.addPlugin(require(`./src/plugins`))
+  eleventyConfig.addWatchTarget(`src/assets/`)
+  eleventyConfig.addPassthroughCopy({ [`src/assets/static/`]: '/' })
+
+  eleventyConfig.addPlugin(plugins)
 
   return {
     htmlTemplateEngine: 'liquid',

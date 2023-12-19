@@ -1,7 +1,7 @@
-const dayjs = require('dayjs')
+import dayjs from 'dayjs'
 
-module.exports = config => {
-  config.addFilter('date_format', async (date, format) => {
+export default eleventyConfig => {
+  eleventyConfig.addFilter('date_format', async (date, format) => {
     return dayjs(date).format(format)
   })
 }

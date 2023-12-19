@@ -11,7 +11,7 @@
   <meta name="author" content="{{ site.author.name }}">
   <meta name="generator" content="{{ eleventy.generator }}">
 
-  <style>{{ styles }}{% if stylesheet %}{% compile_sass stylesheet %}{% endif %}</style>
+  <style>{% for sheet in styles %}{{ site.styles[sheet] }}{% endfor %}</style>
 </head>
 
 <body>{{ content }}</body>

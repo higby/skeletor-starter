@@ -1,9 +1,19 @@
-module.exports = config => {
-  config.addPlugin(require(`./filters/dateFormat`))
-  config.addPlugin(require(`./filters/uriEncode`))
+import dateFormat from './filters/dateFormat.js'
+import uriEncode from './filters/uriEncode.js'
 
-  config.addPlugin(require(`./shortcodes/image`))
+import image from './shortcodes/image.js'
 
-  config.addPlugin(require('./markdown'))
-  config.addPlugin(require('./sass'))
+import markdown from './markdown.js'
+import styles from './styles.js'
+
+export default eleventyConfig => {
+  // Filters
+  eleventyConfig.addPlugin(dateFormat)
+  eleventyConfig.addPlugin(uriEncode)
+
+  // Shortcodes
+  eleventyConfig.addPlugin(image)
+
+  eleventyConfig.addPlugin(markdown)
+  eleventyConfig.addPlugin(styles)
 }

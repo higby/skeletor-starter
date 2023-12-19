@@ -1,7 +1,7 @@
-const Image = require('@11ty/eleventy-img')
+import Image from '@11ty/eleventy-img'
 
-module.exports = config => {
-  config.addShortcode('image', async (src, alt, className) => {
+export default eleventyConfig => {
+  eleventyConfig.addShortcode('image', async (src, alt, className) => {
     if (!alt) throw new Error(`Missing \`alt\` on image from: ${src}`)
 
     if (!src.startsWith('http')) src = `./src/assets/images${src.startsWith('/') ? src : `/${src}`}`
