@@ -18,7 +18,7 @@
 
   <link rel="manifest" href="site.webmanifest">
 
-  <style>{{ styles }}{% if stylesheet %}{% compile_sass stylesheet %}{% endif %}</style>
+  <style>{% for sheet in styles %}{{ site.styles[sheet] }}{% endfor %}</style>
 
   <meta name="theme-color" content="#fafafa">
 </head>

@@ -1,3 +1,3 @@
-module.exports = config => {
-  config.addFilter('uri_encode', data => encodeURIComponent(data))
+export default eleventyConfig => {
+  eleventyConfig.addFilter('uri_encode', data => encodeURIComponent(data))
 }
