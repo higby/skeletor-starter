@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title> 
+    <link rel="stylesheet" href="/main.css">
+
+    <!-- Site Information -->
+    <meta name="description" content="">
+    <meta name="author" content="{{ author.name }}">
+    <meta name="generator" content="{{ eleventy.generator }}">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#fafafa">
+    {% if noindex %}<meta name='robots' content='noindex'>{% endif %}
+
+    <!-- OpenGraph Data -->
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <!-- Favicons -->
+    <link rel='icon' href='/favicon.ico' sizes='any'>
+  </head>
+  <body>{{ content }}</body>
+</html>

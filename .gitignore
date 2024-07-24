@@ -1,19 +1,9 @@
-# Eleventy build directory
-build/
-
-# Dependency directories
+.DS_Store
 node_modules/
-
-# Dependency lock files
 package-lock.json
 bun.lockb
-
-# dotenv
 .env
-
-# temp and cache directory
 .temp/
 .cache/
-
-# Serverless directories
 .serverless/
+build/
